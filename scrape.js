@@ -18,8 +18,6 @@ const LINK_IGNORE_TEXT = [
   "Using library music"
 ];
 
-var finalResults = [];
-
 rp(url)
   .then(function(html) {
     let dataUrls = parseDataUrls(html);
@@ -94,7 +92,7 @@ const parsePageData = function(html) {
     links: []
   };
   let richText = $(SELECTORS.richText);
-  let logo = $(SELECTORS.mainContent);
+  //let logo = $(SELECTORS.mainContent);
   let links = $(SELECTORS.sidebar);
 
   //parse title and description

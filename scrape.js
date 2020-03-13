@@ -14,6 +14,7 @@ const SELECTORS = {
 const LINK_IGNORE_TEXT = [
   "Get a production music licence",
   "Get production music licence",
+  "Get a Production Music Library",
   "Using production music",
   "Using library music"
 ];

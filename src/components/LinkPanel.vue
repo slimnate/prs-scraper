@@ -10,8 +10,8 @@
         <q-tooltip>Visit Website</q-tooltip>
       </q-icon>
     </a>
-    <a v-if="emailLink !== undefined" :href="emailLink.url" class="text-black"
-      ><q-icon name="mail" size="md">
+    <a v-if="emailLink !== undefined" :href="emailLink.url" class="text-black">
+      <q-icon name="mail" size="md">
         <q-tooltip>Send Email</q-tooltip>
       </q-icon>
     </a>
@@ -24,6 +24,10 @@
     >
       <q-tooltip>{{ link.url }}</q-tooltip>
     </a>
+    <q-btn @click.stop="setPreview">
+      Preview
+      <q-tooltip> Show Preview </q-tooltip>
+    </q-btn>
   </div>
 </template>
 
@@ -55,8 +59,12 @@ export default {
       return linktools.getWebLinks(this.links);
     }
   },
-  
-  methods: {}
+
+  methods: {
+    setPreview: function() {
+      this.$store.dispatch("setPreview", this.websiteLink.url);
+    }
+  }
 };
 </script>
 

@@ -1,17 +1,34 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-scroll-area class="library-browser-scroll">
     <q-list class="library-browser" bordered>
       <div v-for="(library, index) in libraries" :key="index">
         <library :index="index" :library="library" />
         <q-separator />
       </div>
     </q-list>
-  </q-page>
+  </q-scroll-area>
 </template>
 
 <style>
+.q-splitter {
+  min-height: inherit;
+  min-width: inherit;
+}
+.q-splitter__panel {
+  min-height: inherit;
+  min-width: inhert;
+}
+.scroll.fit {
+  min-width: inherit;
+  min-height: inherit;
+}
+.library-browser-scroll {
+  min-width: inherit;
+  min-height: inherit;
+}
 .library-browser {
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 </style>
 
@@ -31,7 +48,7 @@ export default {
       libraries
     };
   },
-  
+
   methods: {}
 };
 </script>

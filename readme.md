@@ -25,3 +25,9 @@ Runs the server in development mode with live-reload enabled. Access site at:
 ```npm run build```
 
 Runs the server in production mode
+
+## Future Features & Functionality
+- Add notes and tags to each library
+- Add library to favorites
+- Filter by favorites/tags
+- Search for libraries (fields: name, description, notes, tags)

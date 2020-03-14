@@ -2,7 +2,7 @@
   <q-expansion-item
     group="libraries"
     :default-opened="index === 0"
-    @click="click()"
+    @click="click"
     dense
   >
     <template v-slot:header>
@@ -24,10 +24,6 @@
       <q-card-section>
         {{ library.description }}
       </q-card-section>
-
-      <!--q-card-section v-if="getWebsiteLink(index) !== undefined">
-                <iframe :src="getWebsiteLink(index).url" height="400px"></iframe>
-            </q-card-section-->
     </q-card>
   </q-expansion-item>
 </template>
@@ -64,7 +60,7 @@ export default {
       return this.library.description.substring(0, 150) + ". . .";
     }
   },
-  
+
   methods: {
     click() {
       console.log(this.index);

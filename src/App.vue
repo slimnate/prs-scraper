@@ -8,11 +8,24 @@
           </q-avatar>
           Music Content Libraries
         </q-toolbar-title>
+        <q-btn flat round icon="clear" @click="clearPreview">
+          <q-tooltip>Clear Preview</q-tooltip>
+        </q-btn>
       </q-toolbar>
     </q-header>
 
     <q-page-container>
-      <library-browser />
+      <q-page class="flex flex-center">
+        <q-splitter v-model="splitterModel">
+          <template v-slot:before>
+            <library-browser />
+          </template>
+
+          <template v-slot:after>
+            <site-preview :url="activePreview"> </site-preview>
+          </template>
+        </q-splitter>
+      </q-page>
     </q-page-container>
 
     <q-footer elevated class="bg-grey-8 text-white">
@@ -29,18 +42,40 @@
 
 <script>
 import LibraryBrowser from "./components/LibraryBrowser.vue";
+import SitePreview from "./components/SitePreview.vue";
 
 export default {
   name: "LayoutDefault",
 
-  components: {
-    LibraryBrowser
+  data() {
+    return {
+      splitterModel: 70
+    };
   },
 
-  data() {
-    return {};
+  components: {
+    LibraryBrowser,
+    SitePreview
+  },
+
+  computed: {
+    activePreview: function() {
+      console.log("activePreview = ", this.$store.state.activePreview);
+      return this.$store.state.activePreview;
+    }
+  },
+
+  methods: {
+    clearPreview() {
+      this.$store.dispatch("setPreview", "");
+    }
   }
 };
 </script>
 
-<style></style>
+<style>
+.q-splitter {
+  width: 100%;
+  height: 100%;
+}
+</style>

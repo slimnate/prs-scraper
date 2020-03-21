@@ -23,9 +23,7 @@
       </q-item-section>
     </template>
     <q-card>
-      <q-card-section>
-        {{ library.description }}
-      </q-card-section>
+      <q-card-section v-html="library.description"></q-card-section>
     </q-card>
   </q-expansion-item>
 </template>
@@ -71,7 +69,7 @@ export default {
     },
     fitshortDescription() {
       let width = document.getElementById("shrtdsc-" + this.index).offsetWidth;
-      let text = this.library.description;
+      let text = this.library.descriptionPreview;
       let linkCount = this.library.links.length;
       console.log("linkCount = ", linkCount);
       let extraSpace = 200 - 25 * linkCount;

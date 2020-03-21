@@ -90,6 +90,7 @@ const parsePageData = function(html) {
     title: "",
     logoUrl: "",
     description: "",
+    descriptionPreview: "",
     links: []
   };
   let richText = $(SELECTORS.richText);
@@ -101,8 +102,12 @@ const parsePageData = function(html) {
     .text()
     .trim();
   result.description = $(richText[1])
-    .text()
+    .html()
     .trim();
+  result.descriptionPreview = $(richText[1])
+    .text()
+    .trim()
+    .substring(0, 200);
 
   //parse image TODO: not working
   //console.log(logo);

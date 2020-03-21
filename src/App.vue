@@ -16,7 +16,7 @@
 
     <q-page-container>
       <q-page class="flex flex-center">
-        <q-splitter v-model="splitterModel">
+        <q-splitter v-model="splitterModel" @input="onSplitterResize">
           <template v-slot:before>
             <library-browser />
           </template>
@@ -67,7 +67,12 @@ export default {
 
   methods: {
     clearPreview() {
+      //clear preview url
       this.$store.dispatch("setPreview", "");
+    },
+    onSplitterResize(){
+      //listened for by Library component to resize its shortened description
+      this.$root.$emit('splitterResize');
     }
   }
 };

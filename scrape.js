@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const url = "https://www.prsformusic.com/licences/using-production-music";
 
+//Selectors used in data collection
 const SELECTORS = {
   dataUrls: "div.reference__data-item>a",
   richText: ".rich-text", //first will be title, second will be description
@@ -11,6 +12,7 @@ const SELECTORS = {
   sidebar: ".links-sidebar-module__link"
 };
 
+//Text strings that will cause links to be ignored.
 const LINK_IGNORE_TEXT = [
   "Get a production music licence",
   "Get production music licence",
@@ -19,6 +21,17 @@ const LINK_IGNORE_TEXT = [
   "Using library music"
 ];
 
+//Props added to each data item, used in the list viewer application
+const APP_PROPS = {
+  favorite: false,
+  tags: [],
+  notes: []
+};
+
+//parse "raw" command line flag
+let raw = process.argv[2] === "raw";
+
+//Featch base url
 rp(url)
   .then(function(html) {
     let dataUrls = parseDataUrls(html);
@@ -34,6 +47,7 @@ rp(url)
         path.resolve("./data/libraries.json"),
         JSON.stringify(values)
       );
+      console.log("SUCCESS!");
     });
   })
   .catch(function(err) {
@@ -93,6 +107,11 @@ const parsePageData = function(html) {
     descriptionPreview: "",
     links: []
   };
+
+  if (!raw) {
+    result = Object.assign(result, APP_PROPS);
+  }
+
   let richText = $(SELECTORS.richText);
   //let logo = $(SELECTORS.mainContent);
   let links = $(SELECTORS.sidebar);
@@ -146,6 +165,12 @@ const ignoreLink = function(text) {
   });
 };
 
+/**
+ * Logs an array preview (first `numItems` in the array) using console.log
+ *
+ * @param {array} arr The array to log a preview for
+ * @param {number} numItems The number of items to log in the preview. Defaults to 5
+ */
 const logPreview = function(arr, numItems) {
   numItems = numItems || 5;
   for (var i = 0; i < numItems; i++) {

@@ -5,7 +5,12 @@ This NodeJS package is designed to scrape the [PRS production music library](htt
 ## Getting Started
 
 ### Scraper
-```node scrape.js```
+
+```node scrape.js <options>```
+
+Options:
+- `raw` - export data without the extra fields needed for use by the main application. Use this option to ONLY include the data scraped directly from the website.
+
 
 Run scraper service. Data retrieved will be written to `./data/libraries.json`
 

@@ -22,7 +22,10 @@
         "name": "411 Music Group on YouTube",
         "url": "https://www.youtube.com/watch?v=F8ZPHGf3PDg"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "9 Lives Music",
@@ -36,7 +39,10 @@
         "name": "9 Lives Music on Twitter",
         "url": "https://www.twitter.com/9livesmusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Absolute Music Library",
@@ -52,7 +58,10 @@
         "name": "Email Absolute Music Library",
         "url": "mailto:info@absolutemusiclibrary.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "ALIBI Music Library Ltd",
@@ -73,7 +82,10 @@
         "name": "ALIBI Music Library Ltd on Facebook",
         "url": "https://www.facebook.com/alibimusiclibrary"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Alt Life Music",
@@ -83,7 +95,10 @@
     "links": [
       { "name": "Visit Website", "url": "https://www.alt-lifemusic.com" },
       { "name": "Email Alt-Life Music", "url": "mailto:info@alt-lifemusic.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Amazing World Music",
@@ -103,7 +118,10 @@
         "name": "Amazing World Music on You Tube",
         "url": "https://youtu.be/tW4aprAngvM"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Amphibious Zoo UK",
@@ -128,7 +146,10 @@
         "name": "Amphibious Zoo UK on Facebook",
         "url": "https://www.facebook.com/amphibiouszoo"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Anger Music Library",
@@ -145,7 +166,10 @@
         "name": "Anger Music Library on Twitter",
         "url": "https://twitter.com/ANGRMSC"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Arcadia Production Music (UK)",
@@ -158,7 +182,10 @@
         "name": "Email Arcadia Production Music",
         "url": "mailto:jb@arcadiamusic.tv"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Arms Production Music",
@@ -175,7 +202,10 @@
         "name": "Arms Production Music on Twitter",
         "url": "https://twitter.com/ArmsPMusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "audiomachine",
@@ -197,7 +227,10 @@
         "name": "audiomachine on YouTube",
         "url": "https://www.youtube.com/audiomachine"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "BAM Music Limited",
@@ -218,7 +251,10 @@
         "name": "Bam Prod on Instagram",
         "url": "https://www.instagram.com/bammusiclibrary/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Bandit Music Ltd",
@@ -231,7 +267,10 @@
         "name": "Email Bandit Music",
         "url": "mailto:jonathanward@banditmusic.co.uk"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Beats Bakery",
@@ -253,7 +292,10 @@
         "name": "Beats Bakery on YouTube",
         "url": "https://www.youtube.com/channel/UC_ZrbUyi6fNN6pTU4lJsnhw?ab_channel=BeatsBakery"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Bibliotheque Music",
@@ -274,7 +316,10 @@
         "name": "Bibliotheque Music on Facebook",
         "url": "https://www.facebook.com/bibliothequemusiclibrary"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Big & Clever",
@@ -295,7 +340,10 @@
         "name": "Big & Clever on Facebook",
         "url": "https://www.facebook.com/Big-Clever-Music-111133865590162/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Bleach Music",
@@ -320,7 +368,10 @@
         "name": "Bleach Music on Facebook",
         "url": "https://www.facebook.com/bleachmusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "BMG Production Music",
@@ -336,7 +387,10 @@
       { "name": "BMG on Twitter", "url": "https://twitter.com/bmgpm_uk" },
       { "name": "BMG on Facebook", "url": "https://www.facebook.com/bmgpm.uk" },
       { "name": "BMG on Instagram", "url": "https://instagram.com/bmgpmuk" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Boom! Music Ltd",
@@ -346,7 +400,10 @@
     "links": [
       { "name": "Visit Website", "url": "http://boommusic.tv/" },
       { "name": "Email Boom! Music Ltd", "url": "mailto:info@boommusic.tv" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Boost Music",
@@ -368,7 +425,10 @@
         "name": "Boost Music on Facebook",
         "url": "https://www.youtube.com/user/BoostMusicPublishing"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Brave New Audio",
@@ -385,7 +445,10 @@
         "name": "Email Brave New Audio",
         "url": "mailto:giacomo@bravenewaudiolibrary.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Brilliant Music",
@@ -406,7 +469,10 @@
         "name": "Brilliant Music on Twitter",
         "url": "https://twitter.com/brilliantmus"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Bulletproof Bear",
@@ -434,7 +500,10 @@
         "name": "Bulletproof Bear on Facebook",
         "url": "https://www.facebook.com/BpBearMusic/ "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Cavendish Music",
@@ -455,7 +524,10 @@
         "name": "Cavendish Music on Twitter",
         "url": "https://twitter.com/cavendish_HQ"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Cezame Music Agency",
@@ -474,7 +546,10 @@
         "name": "Cézame on YouTube",
         "url": "https://www.youtube.com/user/Fabermant"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Chapel of Rock",
@@ -484,7 +559,10 @@
     "links": [
       { "name": "Visit Website", "url": "http://www.ChapelofRock.com" },
       { "name": "Email Chapel of Rock", "url": "http://chapel.rock@virgin.net" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Clear Wave Music",
@@ -505,7 +583,10 @@
         "name": "Clear Wave Music on Twitter",
         "url": "https://twitter.com/ClearWaveMusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Counter Music",
@@ -515,7 +596,10 @@
     "links": [
       { "name": "Visit Website", "url": "http://www.countermusic.co.uk/" },
       { "name": "Email Counter Music ", "url": "mailto:music@boostmusic.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Crocodile Music",
@@ -528,7 +612,10 @@
         "name": "Email Crocodile Music Library",
         "url": "mailto:info@crocodilemusic.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Crossbreed Music",
@@ -542,7 +629,10 @@
         "name": "Crossbreed Music on Twitter",
         "url": "https://twitter.com/CrossbreedPM"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "CUES4U.COM",
@@ -561,7 +651,10 @@
         "name": "CUES4U.COM on You Tube",
         "url": "https://www.youtube.com/channel/UCNZTuRCWXRogiD-b4Bh-HbQ?view_as=subscriberhttps://www.aol.co.uk/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Dennis Music",
@@ -582,7 +675,10 @@
         "name": "Dennis Music on Twitter",
         "url": "https://twitter.com/DennisMusicUK"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "De Wolfe Music",
@@ -607,7 +703,10 @@
         "name": "De Wolfe Music on YouTube",
         "url": " https://www.youtube.com/watch?v=2bwjyljvtuI"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "E-Ditions Music",
@@ -620,7 +719,10 @@
         "name": "Email E-Ditions Music",
         "url": "mailto:info@editionsmusic.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Emergency Production Music",
@@ -637,7 +739,10 @@
         "name": "Emergency Production Music on Twitter",
         "url": "https://twitter.com/@EPM_UK"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "EMI Production Music",
@@ -658,7 +763,10 @@
         "name": "EMI Production Music on Facebook",
         "url": "https://www.facebook.com/EMIProductionMusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Evolving Sound",
@@ -683,7 +791,10 @@
         "name": "Evolving Sound on YouTube",
         "url": "https://www.youtube.com/channel/UCG4htijKOd4YMbmdJ6p0ujQ"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Extreme Music",
@@ -701,7 +812,10 @@
         "name": "Extreme Music on Facebook",
         "url": "https://www.facebook.com/extrememusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "FAADA Ltd",
@@ -716,7 +830,10 @@
         "name": "FAADA Ltd on Facebook",
         "url": "https://www.facebook.com/diversemusicsolutions"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Faber Production Music",
@@ -744,7 +861,10 @@
         "name": "Faber Production Music on YouTube",
         "url": "https://www.youtube.com/user/FaberMusicMedia"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Felt Music",
@@ -754,7 +874,10 @@
     "links": [
       { "name": "Visit Website", "url": "http://www.feltmusic.com/" },
       { "name": "Email Felt Music", "url": "mailto:hello@feltmusic.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Figure and Groove",
@@ -766,7 +889,10 @@
         "name": "Visit the Figure and Groove website",
         "url": "https://figureandgroove.sourceaudio.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "FPM Music",
@@ -776,7 +902,10 @@
     "links": [
       { "name": "Visit Website", "url": "http://www.fpmmusic.com/#/home" },
       { "name": "Email FPM Music", "url": "mailto:info@fpmmusic.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Gargantuan Music",
@@ -804,7 +933,10 @@
         "name": "Gargantuan Music on YouTube",
         "url": "https://www.youtube.com/user/gargantuanmusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Greenfield Music",
@@ -817,7 +949,10 @@
         "url": "http://gmusic.co.uk/trailers-promotional/"
       },
       { "name": "Email Greenfield Music", "url": "mailto:music@gmusic.co.uk" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Grey Man Production Music",
@@ -845,7 +980,10 @@
         "name": "Grey Man Production Music on YouTube",
         "url": "https://www.youtube.com/channel/UCX7FJyIDtDfSwApYQ1KbXZg "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Handmade Sounds",
@@ -866,7 +1004,10 @@
         "name": "Facebook",
         "url": "http://www.facebook.com/handmadesoundsprodmusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "High Left Music",
@@ -890,7 +1031,10 @@
         "name": "High Left Music on Twitter",
         "url": "https://twitter.com/highleftmusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Incredible Production Music",
@@ -902,7 +1046,10 @@
         "name": "Incredible Production Music Website",
         "url": "http://www.incrediblemusic.tv "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "In-spired Production Music",
@@ -923,7 +1070,10 @@
         "name": "In-spired Music On YouTube",
         "url": "https://www.youtube.com/user/InspiredPM"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Intake Records",
@@ -943,7 +1093,10 @@
         "name": "Intake Records Showreel",
         "url": "https://www.youtube.com/watch?v=lhWyc50Dfn4&feature=youtu.be"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Just Another Label",
@@ -953,7 +1106,10 @@
     "links": [
       { "name": "Visit Website", "url": "http://www.lemoncake.com/" },
       { "name": "Email Just Another Label", "url": "mailto:ola@thedml.co.uk" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "JW Media Music Ltd",
@@ -978,7 +1134,10 @@
         "name": "JW Media Music on YouTube",
         "url": "https://www.youtube.com/jwmediamusic1"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Lemoncake Music",
@@ -996,7 +1155,10 @@
         "name": "Lemoncake on Facebook",
         "url": "https://www.facebook.com/lemoncakemusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Loaded Production Music",
@@ -1024,7 +1186,10 @@
         "name": "Email Loaded Production",
         "url": "mailto:studio@loadedproductionmusic.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "London Sync Music",
@@ -1036,7 +1201,10 @@
         "name": "Visit the London Sync Website",
         "url": "http://www.londonsyncmusic.com "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Machiavelli Music Publishing",
@@ -1057,7 +1225,10 @@
         "name": "Machiavelli Music Publishing on YouTube",
         "url": "https://www.youtube.com/user/MachiavelliMusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Made Up Music",
@@ -1075,7 +1246,10 @@
         "name": "Made Up Music on Facebook",
         "url": "https://www.facebook.com/Made-Up-Music-171608319515972/ "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "MasonWrightson Music Library",
@@ -1088,7 +1262,10 @@
         "name": "Email MasonWrightson Music Library",
         "url": "mailto:paul.wrightson@gmail.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Mediatracks",
@@ -1098,7 +1275,10 @@
     "links": [
       { "name": "Visit Website", "url": "http://www.mediatracks.co.uk/" },
       { "name": "Email Mediatracks", "url": "mailto:info@mediatracks.co.uk" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Mining Music",
@@ -1116,7 +1296,10 @@
         "name": "Mining Music on Facebook",
         "url": "https://www.facebook.com/TheMiningMusic/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Monkey Puzzle House Production Music",
@@ -1132,7 +1315,10 @@
         "name": "Email Monkey Puzzle House Music Publishing Ltd",
         "url": "mailto:publishing@monkeypuzzlehouse.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Moogang Music",
@@ -1154,7 +1340,10 @@
         "name": "Moogang Music on YouTube",
         "url": "https://www.youtube.com/channel/UCyoQdknQdtSFCymcFn1q29A"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Motus Music",
@@ -1172,7 +1361,10 @@
         "name": "Motus Music on Facebook",
         "url": "https://www.facebook.com/MotusMusicLtd/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Muchas Music",
@@ -1184,7 +1376,10 @@
       { "name": "Email Muchas Music", "url": "mailto:gracias@muchasmusic.com" },
       { "name": "Twitter", "url": "http://www.twitter.com/muchasmusic" },
       { "name": "Facebook", "url": "http://www.facebook.com/muchasmusic" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Music Factory Promotions",
@@ -1204,7 +1399,10 @@
         "name": "Music Factory Promotions on Facebook",
         "url": "https://www.facebook.com/musicfactorypromotions/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Music for Sport",
@@ -1229,7 +1427,10 @@
         "name": "Music for Sport on YouTube",
         "url": "  https://www.youtube.com/channel/UCeqRlYydiF5q-A8LywFFu5w"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "N. Alchemy Music",
@@ -1246,7 +1447,10 @@
         "name": "N.Alchemy Music on Twitter",
         "url": "https://twitter.com/N_Alchemy_Music"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Narrative Mind",
@@ -1259,7 +1463,10 @@
         "name": "E-mail Narrative Mind",
         "url": "mailto:tom@narrativemind.co.uk"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Neil Cartwright Music",
@@ -1276,7 +1483,10 @@
         "name": "Neil Cartwright Music on Twitter",
         "url": "http://www.twitter.com/NECartwright"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Ninja Tune Production Music",
@@ -1292,7 +1502,10 @@
         "name": "Email Ninja Tune Prod Music",
         "url": "mailto:licensing@ninjatuneproductionmusic.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "No Sheet Music",
@@ -1316,7 +1529,10 @@
         "name": "No Sheet Music on YouTube",
         "url": "https://www.youtube.com/channel/UCjBm6hgoPNBiuG1qBDIW99w"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Noisebiscuits",
@@ -1330,7 +1546,10 @@
         "name": "Noisebiscuits on Twitter",
         "url": "https://twitter.com/noisebiscuits"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Off The Shelf Music",
@@ -1355,7 +1574,10 @@
         "name": "Off The Shelf Music on YouTube",
         "url": "https://www.youtube.com/watch?v=HoEdx61lDy8"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Panama Music Library",
@@ -1368,7 +1590,10 @@
         "url": "http://www.panamamusic.co.uk/"
       },
       { "name": "Email Panama Music Library", "url": "mailto:panamus@aol.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Picture Sound",
@@ -1385,7 +1610,10 @@
         "name": "Picture Sound on Facebook",
         "url": "https://www.facebook.com/PictureSoundPro/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Plan 8",
@@ -1399,7 +1627,10 @@
         "name": "Plan 8 Music on YouTube",
         "url": "https://www.youtube.com/channel/UCtvIrkBhJBfUBeEK1hypTjQ"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Poke Music",
@@ -1409,7 +1640,10 @@
     "links": [
       { "name": "Visit Website", "url": "http://www.poke-music.co.uk/" },
       { "name": "Email Poke Music", "url": "mailto:music@boostmusic.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Pop-Up Music Uk Ltd",
@@ -1427,7 +1661,10 @@
         "name": "Pop-Up Music on Facebook",
         "url": "https://www.facebook.com/Pop-up-Music-483438525074338/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Portamento Music",
@@ -1440,7 +1677,10 @@
         "name": "Email Portamento Music",
         "url": "mailto:info@portamentomusic.co.uk"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Presana Production Music",
@@ -1461,7 +1701,10 @@
         "name": "Presana Music on YouTube",
         "url": "https://www.youtube.com/presanamusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Raft Music",
@@ -1479,7 +1722,10 @@
         "name": "Raft Music on Twitter",
         "url": "http://www.twitter.com/Raft_Music"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Ravenwood Music Ltd",
@@ -1492,7 +1738,10 @@
         "name": "Email Ravenwood Music",
         "url": "mailto:george@ravenwoodmusic.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Red and Bear Music Group",
@@ -1509,7 +1758,10 @@
         "name": "Red and Bear Music Group on Twitter",
         "url": "https://twitter.com/RABRightsMgmt"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Redrock Production Music",
@@ -1522,7 +1774,10 @@
         "url": "http://www.redrock.creators.co.uk/"
       },
       { "name": "Email RPM ", "url": "mailto:info@redrockmusicltd.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Reliable Source Music",
@@ -1543,7 +1798,10 @@
         "name": "Reliable Source Music on Facebook",
         "url": "https://www.facebook.com/ReliableSourceMusic/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "SATV Publishing",
@@ -1565,7 +1823,10 @@
         "name": "SATV Publishing on YouTube",
         "url": "https://www.youtube.com/watch?v=bIYJJeNNzEQ&feature=youtu.be"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Sauce Music",
@@ -1579,7 +1840,10 @@
         "name": "Sauce Music on Twitter",
         "url": "https://twitter.com/saucemusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Skipjack Music Limited",
@@ -1591,7 +1855,10 @@
         "name": "Visit the Skipjack Website",
         "url": "http://www.skipjackmusic.co.uk/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Skylight Production Music",
@@ -1607,7 +1874,10 @@
         "name": "Email Skylight Production Music",
         "url": "mailto:skylightproductionmusic@outlook.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Sneaky Biscuit",
@@ -1632,7 +1902,10 @@
         "name": "Sneaky Biscuit on YouTube",
         "url": "https://www.youtube.com/channel/UCv6BpVvLfDFK2xeF92Wsa1g/featured"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Soho Production Music",
@@ -1660,7 +1933,10 @@
         "name": "Soho Production Music on YouTube",
         "url": "https://www.youtube.com/channel/UCwDck-08txqGplEg0IanGwA"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Sound Designs Music",
@@ -1673,7 +1949,10 @@
         "name": "Email Sound Designs Music",
         "url": "mailto:info@sounddesignsmusic.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Soundgram Music Library",
@@ -1698,7 +1977,10 @@
         "name": "Soundgram Music Library on Facebook",
         "url": "https://www.facebook.com/soundgrampost/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Sound On Screen",
@@ -1715,7 +1997,10 @@
         "name": "Sound On Screen on You Tube",
         "url": "https://youtu.be/mQ3QagvVbvA "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Sound Pocket",
@@ -1728,7 +2013,10 @@
         "name": "Email Sound Pocket",
         "url": "mailto:info@soundpocketmusic.com "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Soundtrapper",
@@ -1738,7 +2026,10 @@
     "links": [
       { "name": "Visit Soundtrapper", "url": "http://www.soundtrapper.com " },
       { "name": "Email Soundtrapper", "url": "mailto:general@soundtrapper.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Soundscape Agency",
@@ -1762,7 +2053,10 @@
         "name": "Soundscape Agency on YouTube",
         "url": "https://www.youtube.com/watch?v=Jy-0ldsd1_s"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Spear Music Ltd",
@@ -1780,7 +2074,10 @@
         "name": "Spear Music on Facebook",
         "url": "https://www.facebook.com/spearmusiclondon"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Squirky Music",
@@ -1802,7 +2099,10 @@
         "name": "Squirky Music on YouTube",
         "url": "https://www.youtube.com/watch?v=uhtIZ0F_CqQ"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Standard Music Library",
@@ -1818,7 +2118,10 @@
         "name": "Email Standard Music Library",
         "url": "mailto:info@standardmusiclibrary.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Stormcues Ltd",
@@ -1828,7 +2131,10 @@
     "links": [
       { "name": "Visit website", "url": "http://www.stormcues.com " },
       { "name": "Email Stormcues Ltd", "url": "mailto:info@stormcues.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Strophic Music",
@@ -1844,7 +2150,10 @@
         "name": "Strophic Music on Twitter",
         "url": "https://twitter.com/StrophicMusic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Supertonic Publishing",
@@ -1860,7 +2169,10 @@
         "name": "Visit the Supertonic website",
         "url": "https://supertonicpublishing.wixsite.com/supertonic"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Tele Music",
@@ -1870,7 +2182,10 @@
     "links": [
       { "name": "Visit website", "url": "https://www.tele-music.com/#/" },
       { "name": "Email Tele Music", "url": "mailto:jamie@tele-music.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "The Firm Music",
@@ -1880,7 +2195,10 @@
     "links": [
       { "name": "Website", "url": "http://www.firmmusicgroup.com " },
       { "name": "Email", "url": "mailto:hello@firmmusicgroup.com" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "The Funky Junkies",
@@ -1905,7 +2223,10 @@
         "name": "YouTube",
         "url": "https://www.youtube.com/user/TheFunkyJunkies "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "The Music Factor Library",
@@ -1921,7 +2242,10 @@
         "name": "Email The Music Factor Library",
         "url": "mailto:themusicfactor@paulrodriguezmusic.co.uk"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "The Music Tracks",
@@ -1934,7 +2258,10 @@
         "name": "Email The Music Tracks",
         "url": "mailto:production@themusicsculptors.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "The Perfect Music Library",
@@ -1954,7 +2281,10 @@
         "name": "The Perfect Music Library on Twitter",
         "url": "https://twitter.com/PerfectMusicLib"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Thermal Music",
@@ -1966,7 +2296,10 @@
       { "name": "Email Thermal Music", "url": "mailto:info@thermalmusic.tv" },
       { "name": "Twitter", "url": "http://www.twitter.com/thermalmusic" },
       { "name": "Facebook", "url": "https://www.facebook.com/thermalmusicltd/" }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Thousand Mile Music",
@@ -1987,7 +2320,10 @@
         "name": "Email Thousand Mile Music",
         "url": "mailto:info@thousandmilemusic.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Triumph Music",
@@ -2003,7 +2339,10 @@
         "name": "Triumph Music on Twitter",
         "url": "https://twitter.com/TriumphMusicGrp "
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Tubesounds Limited",
@@ -2021,7 +2360,10 @@
         "name": "Tubesounds on Twitter",
         "url": "https://www.twitter.com/tubesounds"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Twisted Jukebox",
@@ -2034,7 +2376,10 @@
         "name": "Email Twisted Jukebox",
         "url": "mailto:contact@twistedjukebox.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Universal Production Music",
@@ -2062,7 +2407,10 @@
         "name": "Universal Production Music on YouTube",
         "url": "https://www.youtube.com/user/UPPMUK"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Using Music Library",
@@ -2080,7 +2428,10 @@
         "name": "Using Music on YouTube",
         "url": "https://www.youtube.com/channel/UCk2kbaStb9vxf981CpP3giQ"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Vibey Library",
@@ -2094,7 +2445,10 @@
         "name": "View Showreel",
         "url": "https://www.youtube.com/channel/UCFJq4ct2BCiZV6rCZougqxQ"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Warner Chappell Production Music",
@@ -2112,7 +2466,10 @@
         "name": "Warner Chappell Production Music on YouTube",
         "url": "https://www.youtube.com/watch?v=87mKCFgMKIM"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "West One Music Group",
@@ -2137,7 +2494,10 @@
         "name": "West One Music Group on YouTube",
         "url": "https://www.youtube.com/channel/UCeAKr1Jt2d0zJAqOk7Fdsww"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Wonderweb Music",
@@ -2150,7 +2510,10 @@
         "name": "Email Wonderweb Music",
         "url": "mailto:enquiries@wonderwebmusic.com"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Wrong Planet Music",
@@ -2175,7 +2538,10 @@
         "name": "Wrong Planet Music on Instagram",
         "url": "https://www.instagram.com/wrongplanetmusic/"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   },
   {
     "title": "Zone Music",
@@ -2189,6 +2555,9 @@
         "name": "Zone Music on Twitter",
         "url": "https://twitter.com/zonemusicltd"
       }
-    ]
+    ],
+    "favorite": false,
+    "tags": [],
+    "notes": []
   }
 ]

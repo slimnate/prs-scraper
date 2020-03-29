@@ -33,11 +33,14 @@
 </style>
 
 <script>
-import libraries from "../../data/libraries.json";
 import Library from "./Library.vue";
 
 export default {
   name: "LibraryBrowser",
+
+  props: {
+      libraries: Array
+  },
 
   components: {
     Library
@@ -45,7 +48,7 @@ export default {
 
   data() {
     return {
-      libraries: libraries
+        
     };
   },
 

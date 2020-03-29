@@ -11,11 +11,13 @@
     "@quasar/extras": "^1.0.0",
     "cheerio": "^1.0.0-rc.3",
     "core-js": "^3.6.4",
+    "fuse.js": "^5.0.7-beta",
     "quasar": "^1.0.0",
     "request-promise": "^4.2.5",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
-    "vuex": "^3.1.2"
+    "vuex": "^3.1.2",
+    "vuex-persist": "^2.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",

@@ -8,6 +8,28 @@
           </q-avatar>
           Music Content Libraries
         </q-toolbar-title>
+
+        <q-input
+          dark
+          dense
+          standout
+          label="Search"
+          v-model="searchText"
+          debounce="600"
+          input-class="text-right"
+          class="q-ml-md search"
+        >
+          <template v-slot:append>
+            <q-icon v-if="searchText === ''" name="search" />
+            <q-icon
+              v-else
+              name="clear"
+              class="cursor-pointer"
+              @click="searchText = ''"
+            />
+          </template>
+        </q-input>
+
         <q-btn flat round icon="clear" @click="clearPreview">
           <q-tooltip>Clear Preview</q-tooltip>
         </q-btn>
@@ -18,7 +40,7 @@
       <q-page class="flex flex-center">
         <q-splitter v-model="splitterModel" @input="onSplitterResize">
           <template v-slot:before>
-            <library-browser />
+            <library-browser :filter="searchText" :libraries="libraries" />
           </template>
 
           <template v-slot:after>
@@ -49,6 +71,7 @@ export default {
 
   data() {
     return {
+      searchText: "",
       splitterModel: 70
     };
   },
@@ -62,6 +85,12 @@ export default {
     activePreview: function() {
       console.log("activePreview = ", this.$store.state.activePreview);
       return this.$store.state.activePreview;
+    },
+    libraries: function() {
+      if (this.searchText) {
+        return this.$store.getters.librarySearch(this.searchText);
+      }
+      return this.$store.getters.libraries;
     }
   },
 
@@ -70,10 +99,15 @@ export default {
       //clear preview url
       this.$store.dispatch("setPreview", "");
     },
-    onSplitterResize(){
+    onSplitterResize() {
       //listened for by Library component to resize its shortened description
-      this.$root.$emit('splitterResize');
+      this.$root.$emit("splitterResize");
     }
+  },
+
+  created() {
+    console.log("initing store");
+    this.$store.dispatch("init");
   }
 };
 </script>
@@ -82,5 +116,9 @@ export default {
 .q-splitter {
   width: 100%;
   height: 100%;
+}
+
+.search {
+  width: 30%;
 }
 </style>

@@ -36,4 +36,3 @@ Runs the server in production mode
 - Add notes and tags to each library
 - Add library to favorites
 - Filter by favorites/tags
-- Search for libraries (fields: name, description, notes, tags)

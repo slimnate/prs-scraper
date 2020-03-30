@@ -10,6 +10,25 @@ let vuexLocalStorage = new VuexPersist({
 
 Vue.use(Vuex);
 
+/**
+ * Returns true if the library is tagged with one or more terms in `filterTags`
+ * @param {object} library Library object to check for tags
+ * @param {array<string>} filterTags List of tags to search for
+ */
+function hasRelevantTag(library, filterTags) {
+  let res = false;
+
+  //search each tag on library
+  library.tags.forEach(libraryTag => {
+    if (filterTags.indexOf(libraryTag) !== -1) {
+      //add library if any tags on library are in filterTags
+      res = true;
+    }
+  });
+
+  return res;
+}
+
 export default new Vuex.Store({
   state: {
     activePreview: "",
@@ -32,7 +51,7 @@ export default new Vuex.Store({
   },
   actions: {
     init({ commit, state }) {
-      console.log("store.init()")
+      console.log("store.init()");
       if (state.libraries.length == 0) {
         console.log("setting library data");
         commit("SET_LIBRARIES", libraryData);
@@ -47,8 +66,23 @@ export default new Vuex.Store({
     libraries: state => {
       return state.libraries;
     },
-    librarySearch: () => searchTerm => {
-      return search.search(searchTerm);
+    libraryFilter: (state) => filter => {
+      var { searchTerm, favorites, filterTags } = filter;
+
+      console.log(filter);
+
+      //get initial search results
+      var results = searchTerm ? search.search(searchTerm) : state.libraries;
+
+      if (favorites) {
+        results = results.filter(library => library.favorites);
+      }
+
+      if (filterTags && filterTags.length > 0) {
+        results = results.filter(library => hasRelevantTag(library, filterTags));
+      }
+
+      return results;
     }
   },
   plugins: [vuexLocalStorage.plugin],

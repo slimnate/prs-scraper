@@ -72,6 +72,8 @@ export default {
   data() {
     return {
       searchText: "",
+      filterFavorites: false,
+      filterTags: [],
       splitterModel: 70
     };
   },
@@ -87,10 +89,14 @@ export default {
       return this.$store.state.activePreview;
     },
     libraries: function() {
-      if (this.searchText) {
-        return this.$store.getters.librarySearch(this.searchText);
-      }
-      return this.$store.getters.libraries;
+      let filter = {
+        searchText: this.searchText,
+        favorites: this.filterFavorites,
+        filterTags: this.filterTags
+      };
+
+      return this.$store.getters.libraryFilter(filter);
+    },
     }
   },
 

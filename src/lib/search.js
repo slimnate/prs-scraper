@@ -28,15 +28,15 @@ const options = {
 };
 
 /**
- * 
- * @param {Array<Fuse} searchResults 
+ * Normalizes an array of searh results into a format matching the datas initial format.
+ * @param {Array<Fuse} searchResults search results object to normalize
  */
 function normalize(searchResults) {
  return searchResults.reduce((res, curr) => {
      res.push(curr.item);
      return res;
  }, [])
-}
+};
 
 export default {
   init(list) {

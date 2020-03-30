@@ -9,6 +9,16 @@
           Music Content Libraries
         </q-toolbar-title>
 
+        <q-select
+          label="Tags"
+          style="min-width: 200px;"
+          label-color="white"
+          multiple
+          clearable
+          v-model="filterTags"
+          :options="tagOptions"
+        />
+
         <q-input
           dark
           dense
@@ -97,6 +107,8 @@ export default {
 
       return this.$store.getters.libraryFilter(filter);
     },
+    tagOptions: function() {
+      return ["tag1", "tag2"]; //todo read tags from libraries
     }
   },
 

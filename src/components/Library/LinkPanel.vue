@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import libraries from "../../data/libraries.json";
-import linktools from "../lib/links";
+import libraries from "../../../data/libraries.json";
+import linktools from "../../lib/links";
 
 export default {
   name: "LinkPanel",

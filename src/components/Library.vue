@@ -55,14 +55,14 @@
         <q-tab-panel name="notes">
           <div class="text-h6">Notes</div>
 
-          <!-- todo implement note editor -->
+          <library-notes :library="library"></library-notes>
         </q-tab-panel>
 
         <!-- tags tab -->
         <q-tab-panel name="tags">
           <div class="text-h6">Tags</div>
 
-          <!-- todo implement tag editor -->
+          <library-tags :library="library"></library-tags>
         </q-tab-panel>
       </q-tab-panels>
 
@@ -84,13 +84,17 @@
 </style>
 
 <script>
-import LinkPanel from "./LinkPanel.vue";
+import LinkPanel from "./Library/LinkPanel.vue";
+import LibraryNotes from "./Library/Notes.vue";
+import LibraryTags from "./Library/Tags.vue";
 
 export default {
   name: "Library",
 
   components: {
-    LinkPanel
+    LinkPanel,
+    LibraryNotes,
+    LibraryTags
   },
 
   props: {

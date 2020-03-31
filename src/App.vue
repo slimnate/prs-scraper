@@ -108,7 +108,7 @@ export default {
       return this.$store.getters.libraryFilter(filter);
     },
     tagOptions: function() {
-      return ["tag1", "tag2"]; //todo read tags from libraries
+      return this.$store.getters.tagList;
     }
   },
 

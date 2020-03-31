@@ -67,12 +67,14 @@ export default new Vuex.Store({
       return state.libraries;
     },
     libraryFilter: (state) => filter => {
-      var { searchTerm, favorites, filterTags } = filter;
+      var { searchText, favorites, filterTags } = filter;
 
       console.log(filter);
 
       //get initial search results
-      var results = searchTerm ? search.search(searchTerm) : state.libraries;
+      var results = searchText ? search.search(searchText) : state.libraries;
+
+      console.log("post-search: ", results);
 
       if (favorites) {
         results = results.filter(library => library.favorites);
@@ -83,6 +85,22 @@ export default new Vuex.Store({
       }
 
       return results;
+    },
+    tagList: (state) => {
+      var tagList = state.libraries.reduce((res, item) => {
+        console.log(item.tags);
+        item.tags.forEach((tag) => { //for each tag in item
+          console.log("tag=", tag);
+          if(res.indexOf(tag) == -1) { //if tag is not in result
+            res.push(tag);
+          }
+        });
+
+        return res;
+      }, []);
+      console.log("tagList: ", tagList);
+
+      return tagList;
     }
   },
   plugins: [vuexLocalStorage.plugin],

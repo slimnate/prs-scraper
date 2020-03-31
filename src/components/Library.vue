@@ -13,7 +13,12 @@
       </q-item-section>
 
       <q-item-section>
-        <b>{{ library.title }} : </b>
+        <div class="text-weight-bolder">
+          {{ library.title }} :
+          <q-badge v-for="tag in library.tags" :key="tag" align="middle" style="margin:2px;">
+            {{ tag }} </q-badge
+          >
+        </div>
         <span :id="'ruler-' + index" class="display: none;"></span>
         <span :id="'shrtdsc-' + index" class="short-description">{{
           shortDescription

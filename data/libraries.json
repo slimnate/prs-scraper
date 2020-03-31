@@ -24,7 +24,7 @@
       }
     ],
     "favorite": false,
-    "tags": [],
+    "tags": ["test 1", "test 2", "test 3"],
     "notes": []
   },
   {
@@ -41,7 +41,7 @@
       }
     ],
     "favorite": false,
-    "tags": [],
+    "tags": ["test 1", "test 2"],
     "notes": []
   },
   {
@@ -60,7 +60,7 @@
       }
     ],
     "favorite": false,
-    "tags": [],
+    "tags": ["test 1", "test 2"],
     "notes": []
   },
   {
@@ -84,7 +84,7 @@
       }
     ],
     "favorite": false,
-    "tags": [],
+    "tags": ["test 1"],
     "notes": []
   },
   {
@@ -97,7 +97,7 @@
       { "name": "Email Alt-Life Music", "url": "mailto:info@alt-lifemusic.com" }
     ],
     "favorite": false,
-    "tags": [],
+    "tags": ["test 2"],
     "notes": []
   },
   {
@@ -120,7 +120,7 @@
       }
     ],
     "favorite": false,
-    "tags": [],
+    "tags": ["test 3"],
     "notes": []
   },
   {

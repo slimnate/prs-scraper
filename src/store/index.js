@@ -11,7 +11,8 @@ let vuexLocalStorage = new VuexPersist({
 Vue.use(Vuex);
 
 /**
- * Returns true if the library is tagged with one or more terms in `filterTags`
+ * Returns true if the `library` is tagged with one or more terms in `filterTags`
+ * - Used by tag filtering logic
  * @param {object} library Library object to check for tags
  * @param {array<string>} filterTags List of tags to search for
  */
@@ -29,27 +30,53 @@ function hasRelevantTag(library, filterTags) {
   return res;
 }
 
+/**
+ * Returns true if the `library` object contains specified `tag`
+ * @param {object} library Library object
+ * @param {string} tag Tag to check for
+ */
+function hasTag(library, tag) {
+  return library.tags.indexOf(tag) !== -1;
+}
+
 export default new Vuex.Store({
+  //STATE
   state: {
     activePreview: "",
     libraries: []
   },
+
+  //MUTATIONS
   mutations: {
+    /** Sets active preview pane url */
     SET_PREVIEW(state, url) {
       state.activePreview = url;
     },
+    /** Sets the libraries array directly */
     SET_LIBRARIES(state, libraries) {
       state.libraries = libraries;
       //init search module to keep search index up to date
       search.init(state.libraries);
     },
+    /** Updates a library based on it's id (index) */
     UPDATE_LIBRARY(state, { id, library }) {
-      state.libraries[id] = library;
+      var mapped = state.libraries.map((curr, index) => {
+        return index == id ? library : curr;
+      });
+      state.libraries = mapped;
+
       //init search module to keep search index up to date
       search.init(state.libraries);
     }
   },
+
+  //ACTIONS
   actions: {
+    /**
+     * Initializes the library collection upon FIRST application run (data
+     * is read from the persistent storage upon subsequent startups), also
+     * initializes the search index.
+     */
     init({ commit, state }) {
       console.log("store.init()");
       if (state.libraries.length == 0) {
@@ -58,51 +85,99 @@ export default new Vuex.Store({
       }
       search.init(state.libraries);
     },
+
+    /**
+     * Sets the active preview pane url
+     * @param {*} url url to preview
+     */
     setPreview({ commit }, url) {
       commit("SET_PREVIEW", url);
+    },
+
+    /**
+     * Add a tag to a library entry
+     * @param {number} data.libraryId Library id (index)
+     * @param {string} data.tag Tag to add
+     */
+    addTag({ commit, state }, { libraryId, tag }) {
+      //grab copy of library obj to work on
+      var lib = Object.assign({}, state.libraries[libraryId]);
+
+      if (!hasTag(lib, tag)) {
+        lib.tags.push(tag);
+        commit("UPDATE_LIBRARY", { id: libraryId, library: lib });
+      }
+    },
+
+    /**
+     * Remove specified tag from specified library entry
+     * @param {number} data.libraryId Library id (index)
+     * @param {number} data.tagIndex index of tag to remove
+     */
+    removeTag({ commit, state }, { libraryId, tagIndex }) {
+      //grab copy of library obj to work on
+      var lib = Object.assign({}, state.libraries[libraryId]);
+
+      lib.tags = lib.tags.filter((t, i) => i !== tagIndex);
+      commit("UPDATE_LIBRARY", { id: libraryId, library: lib });
     }
   },
+
+  //GETTERS
   getters: {
+    /** Returns all libraries */
     libraries: state => {
       return state.libraries;
     },
-    libraryFilter: (state) => filter => {
-      var { searchText, favorites, filterTags } = filter;
 
-      console.log(filter);
+    /**
+     * Returns list of libraries that match specified filter params
+     *
+     * @param {string} filter.searchText search string
+     * @param {boolean} filter.favorites filter by favorites if true
+     * @param {array} filter.filterTags list of tags to filter by (must match one or more tags)
+     */
+    libraryFilter: state => filter => {
+      var { searchText, favorites, filterTags } = filter;
 
       //get initial search results
       var results = searchText ? search.search(searchText) : state.libraries;
-
-      console.log("post-search: ", results);
 
       if (favorites) {
         results = results.filter(library => library.favorites);
       }
 
       if (filterTags && filterTags.length > 0) {
-        results = results.filter(library => hasRelevantTag(library, filterTags));
+        results = results.filter(library =>
+          hasRelevantTag(library, filterTags)
+        );
       }
 
       return results;
     },
-    tagList: (state) => {
+
+    /**
+     * Returns an aggregate list of all tags found on one or more libraries
+     * for use in the tag filter selector.
+     */
+    tagList: state => {
       var tagList = state.libraries.reduce((res, item) => {
-        console.log(item.tags);
-        item.tags.forEach((tag) => { //for each tag in item
-          console.log("tag=", tag);
-          if(res.indexOf(tag) == -1) { //if tag is not in result
+        item.tags.forEach(tag => {
+          //for each tag in item
+          if (res.indexOf(tag) == -1) {
+            //if tag is not in result, add
             res.push(tag);
           }
         });
 
         return res;
       }, []);
-      console.log("tagList: ", tagList);
 
       return tagList;
     }
   },
+
   plugins: [vuexLocalStorage.plugin],
+
   modules: {}
 });

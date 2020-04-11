@@ -62,7 +62,7 @@
         <q-tab-panel name="tags">
           <div class="text-h6">Tags</div>
 
-          <library-tags :library="library"></library-tags>
+          <library-tags :library="library" :libraryId="index"></library-tags>
         </q-tab-panel>
       </q-tab-panels>
 

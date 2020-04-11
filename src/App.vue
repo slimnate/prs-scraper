@@ -40,6 +40,20 @@
           </template>
         </q-input>
 
+        <q-icon
+          v-if="filterFavorites"
+          size="md"
+          name="star"
+          color="text-yellow"
+          @click.stop="filterFavorites = false"
+        />
+        <q-icon
+          v-else
+          size="md"
+          name="star_outline"
+          @click.stop="filterFavorites = true"
+        />
+
         <q-btn flat round icon="clear" @click="clearPreview">
           <q-tooltip>Clear Preview</q-tooltip>
         </q-btn>

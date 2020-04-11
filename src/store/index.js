@@ -105,6 +105,7 @@ export default new Vuex.Store({
 
       if (!hasTag(lib, tag)) {
         lib.tags.push(tag);
+
         commit("UPDATE_LIBRARY", { id: libraryId, library: lib });
       }
     },
@@ -119,7 +120,21 @@ export default new Vuex.Store({
       var lib = Object.assign({}, state.libraries[libraryId]);
 
       lib.tags = lib.tags.filter((t, i) => i !== tagIndex);
+
       commit("UPDATE_LIBRARY", { id: libraryId, library: lib });
+    },
+
+    /**
+     * Toggles the `favorite` property on the library
+     * @param {number} libraryId index of library
+     */
+    toggleFavorite({commit, state}, libraryId) {
+      //grab copy of library obj to work on
+      var lib = Object.assign({}, state.libraries[libraryId]);
+
+      lib.favorite = !lib.favorite;
+
+      commit("UPDATE_LIBRARY", {id: libraryId, library: lib});
     }
   },
 
@@ -144,7 +159,7 @@ export default new Vuex.Store({
       var results = searchText ? search.search(searchText) : state.libraries;
 
       if (favorites) {
-        results = results.filter(library => library.favorites);
+        results = results.filter(library => library.favorite);
       }
 
       if (filterTags && filterTags.length > 0) {

@@ -2,14 +2,27 @@
   <q-expansion-item
     group="libraries"
     :default-opened="index === 0"
-    @click="click"
     dense
   >
     <!-- expansion header -->
-    <!-- add favorites star somewhere in header. -->
     <template v-slot:header>
+      <!-- favorites star -->
       <q-item-section avatar>
-        <q-avatar icon="contact_mail" />
+        <q-avatar
+          v-if="library.favorite"
+          size="xl"
+          icon="star"
+          class="text-yellow"
+          color="grey-2"
+          @click.stop="toggleFavorite"
+        />
+        <q-avatar
+          v-else
+          size="xl"
+          icon="star_outline"
+          color="grey-2"
+          @click.stop="toggleFavorite"
+        />
       </q-item-section>
 
       <q-item-section>
@@ -112,8 +125,8 @@ export default {
   computed: {},
 
   methods: {
-    click() {
-      console.log(this.index);
+    toggleFavorite() {
+        this.$store.dispatch("toggleFavorite", this.index);
     },
     onResize() {
       this.fitShortDescription();

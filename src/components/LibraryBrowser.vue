@@ -1,6 +1,8 @@
 <template>
+  <!-- main scroll area -->
   <q-scroll-area class="library-browser-scroll">
     <q-list class="library-browser" bordered>
+      <!-- loop render each library -->
       <div v-for="(library, index) in libraries" :key="index">
         <library :index="index" :library="library" />
         <q-separator />
@@ -14,18 +16,22 @@
   min-height: inherit;
   min-width: inherit;
 }
+
 .q-splitter__panel {
   min-height: inherit;
   min-width: inhert;
 }
+
 .scroll.fit {
   min-width: inherit;
   min-height: inherit;
 }
+
 .library-browser-scroll {
   min-width: inherit;
   min-height: inherit;
 }
+
 .library-browser {
   height: 100%;
   width: 100%;
@@ -39,7 +45,7 @@ export default {
   name: "LibraryBrowser",
 
   props: {
-      libraries: Array
+    libraries: Array
   },
 
   components: {
@@ -47,9 +53,7 @@ export default {
   },
 
   data() {
-    return {
-        
-    };
+    return {};
   },
 
   methods: {}

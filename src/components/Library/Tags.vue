@@ -26,10 +26,10 @@
       </tbody>
     </q-markup-table>
 
-    <!-- Add tag selector -->
+    <!-- Add tag section -->
     <div class="row justify-end items-center">
       <div class="col-8">
-        <!-- <q-input v-model="newTag" label="Add new tag"></q-input> -->
+        <!-- tag editor dropdown -->
         <q-select
           v-model="newTag"
           use-input
@@ -40,6 +40,7 @@
           hint="Tag this library"
         >
           <template v-slot:append>
+            <!-- clear input button -->
             <q-icon
               v-if="newTag !== null"
               class="cursor-pointer"
@@ -52,6 +53,8 @@
     </div>
   </div>
 </template>
+
+<style></style>
 
 <script>
 export default {
@@ -75,19 +78,25 @@ export default {
   },
 
   methods: {
+      /**
+       * Remove selected tag
+       */
     removeTag: function(tagIndex) {
       this.$store.dispatch("removeTag", {
         libraryId: this.libraryId,
         tagIndex
       });
     },
+
+    /**
+     * Add a tag to the library
+     */
     addTag: function(tag) {
-      tag = tag || this.newTag;
+      tag = tag || this.newTag; //use tag if provided, otherwise use q-select value
 
       console.log("adding tag to library: ", tag);
 
       if (tag.length !== 0) {
-
         this.newTag = null;
 
         this.$store.dispatch("addTag", {
@@ -96,6 +105,11 @@ export default {
         });
       }
     },
+
+    /**
+     * Called by q-select component when the user inputs a new tag,
+     * proxies work to `addTag` method with the user input
+     */
     newTagValue: function(val, done) {
       console.log("new tag: ", val);
       this.addTag(val);
@@ -104,5 +118,3 @@ export default {
   }
 };
 </script>
-
-<style></style>

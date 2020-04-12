@@ -2,15 +2,19 @@
   <div>
     <!-- Table of existing notes -->
     <q-markup-table class="row">
+      <!-- table header -->
       <thead>
         <tr>
           <th class="text-left">Note</th>
           <th class="text-left">Actions</th>
         </tr>
       </thead>
+      <!-- table body -->
       <tbody>
         <tr v-for="(note, i) in library.notes" :key="i">
+          <!-- note -->
           <td class="text-left" v-html="note"></td>
+          <!-- action buttons -->
           <td>
             <q-btn
               flat
@@ -32,25 +36,20 @@
     </q-markup-table>
     <br />
 
-    <!-- note editor -->
+    <!-- editor title-->
     <div class="row text-weight-medium editor-title">
       {{ action }} Note <q-space />
-      <div class="text-caption">Ctrl/Cmd + Enter to submit</div>
+      <div class="text-caption">Note editor</div>
     </div>
 
+    <!-- note editor -->
     <div class="row justify-center items-center">
-      <div class="col-12" >
-        <!-- <q-input v-model="newTag" label="Add new tag"></q-input> -->
-        <q-editor
-          v-model="newNote"
-          hint="Add new note"
-          @keypress.ctrl.enter.stop="saveNote"
-          @input="logInput"
-        >
-        </q-editor>
+      <div class="col-12">
+        <q-editor v-model="newNote"> </q-editor>
       </div>
     </div>
 
+    <!-- editor save action -->
     <div class="row justify-end add-btn">
       <q-btn
         class="col-2"
@@ -60,6 +59,23 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+th:nth-of-type(1) {
+  width: 80%;
+}
+td:nth-of-type(1) {
+  width: 80%;
+}
+
+.add-btn {
+  margin-top: 5px;
+}
+
+.editor-title {
+  margin: 10px;
+}
+</style>
 
 <script>
 export default {
@@ -81,6 +97,10 @@ export default {
   computed: {},
 
   methods: {
+    /**
+     * Depending on the current value of `this.action`:
+     * Add new note OR save changes to note being edited.
+     */
     saveNote: function() {
       if (this.action == "Add" && this.newNote.length > 0) {
         //add action
@@ -102,37 +122,22 @@ export default {
         });
       }
     },
+
+    /**
+     * Modify the editor mode to edit selected note
+     */
     editNote: function(noteId) {
       this.editNoteId = noteId;
       this.action = "Edit";
       this.newNote = this.library.notes[noteId];
     },
+
+    /**
+     * Remove the selected note from list
+     */
     removeNote: function(noteId) {
       this.$store.dispatch("removeNote", { libraryId: this.libraryId, noteId });
-    },
-    logInput(e, a, b, c) {
-        console.log(e);
-        console.log(a);
-        console.log(b);
-        console.log(c);
     }
   }
 };
 </script>
-
-<style scoped>
-th:nth-of-type(1) {
-  width: 80%;
-}
-td:nth-of-type(1) {
-  width: 80%;
-}
-
-.add-btn {
-  margin-top: 5px;
-}
-
-.editor-title {
-  margin: 10px;
-}
-</style>

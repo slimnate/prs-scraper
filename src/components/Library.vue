@@ -1,9 +1,5 @@
 <template>
-  <q-expansion-item
-    group="libraries"
-    :default-opened="index === 0"
-    dense
-  >
+  <q-expansion-item group="libraries" :default-opened="index === 0" dense>
     <!-- expansion header -->
     <template v-slot:header>
       <!-- favorites star -->
@@ -25,19 +21,28 @@
         />
       </q-item-section>
 
+      <!-- title/description -->
       <q-item-section>
-        <div class="text-weight-bolder">
+        <div class="text-weight-medium">
           {{ library.title }} :
-          <q-badge v-for="tag in library.tags" :key="tag" align="middle" style="margin:2px;">
-            {{ tag }} </q-badge
+          <q-badge
+            v-for="tag in library.tags"
+            :key="tag"
+            align="middle"
+            style="margin:2px;"
           >
+            {{ tag }}
+          </q-badge>
         </div>
-        <span :id="'ruler-' + index" class="display: none;"></span>
+
+        <!-- span :id="'ruler-' + index" class="display: none;"></span -->
         <span :id="'shrtdsc-' + index" class="short-description">{{
           shortDescription
         }}</span>
+        <!--span class="ellipsis"> {{ library.descriptionPreview }} </span-->
       </q-item-section>
 
+      <!-- link panel -->
       <q-item-section side>
         <link-panel :links="library.links" />
       </q-item-section>
@@ -125,12 +130,24 @@ export default {
   computed: {},
 
   methods: {
+    /**
+     * Toggle the libraries `favorite` property
+     */
     toggleFavorite() {
-        this.$store.dispatch("toggleFavorite", this.index);
+      this.$store.dispatch("toggleFavorite", this.index);
     },
+
+    /**
+     * Called upon resize of window or splitter
+     */
     onResize() {
       this.fitShortDescription();
     },
+
+    /**
+     * Calculates a new value for `shortDescription` data property based on
+     * current size of window and slider position
+     */
     fitShortDescription() {
       let width = document.getElementById("shrtdsc-" + this.index).offsetWidth;
       let text = this.library.descriptionPreview;

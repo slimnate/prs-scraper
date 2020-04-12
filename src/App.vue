@@ -86,6 +86,17 @@
   </q-layout>
 </template>
 
+<style>
+.q-splitter {
+  width: 100%;
+  height: 100%;
+}
+
+.search {
+  width: 30%;
+}
+</style>
+
 <script>
 import LibraryBrowser from "./components/LibraryBrowser.vue";
 import SitePreview from "./components/SitePreview.vue";
@@ -143,14 +154,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.q-splitter {
-  width: 100%;
-  height: 100%;
-}
-
-.search {
-  width: 30%;
-}
-</style>

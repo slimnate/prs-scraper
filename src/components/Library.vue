@@ -61,7 +61,7 @@
       <q-tab-panels v-model="tab" animated>
         <!-- description tab -->
         <q-tab-panel name="description">
-          <div class="text-h6">Description</div>
+          <div class="text-h6 text-center">Description</div>
 
           <div
             class="text-body2 description"
@@ -71,14 +71,14 @@
 
         <!-- notes tab-->
         <q-tab-panel name="notes">
-          <div class="text-h6">Notes</div>
+          <div class="text-h6 text-center">Notes</div>
 
           <library-notes :library="library" :libraryId="index"></library-notes>
         </q-tab-panel>
 
         <!-- tags tab -->
         <q-tab-panel name="tags">
-          <div class="text-h6">Tags</div>
+          <div class="text-h6 text-center">Tags</div>
 
           <library-tags :library="library" :libraryId="index"></library-tags>
         </q-tab-panel>
@@ -91,9 +91,8 @@
 
 <style>
 .short-description {
-  margin: 3px;
+  margin: 1px;
   font-weight: lighter;
-  text-overflow: ellipsis;
 }
 
 .description {

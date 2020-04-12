@@ -32,15 +32,14 @@ const options = {
  * @param {Array<Fuse} searchResults search results object to normalize
  */
 function normalize(searchResults) {
- return searchResults.reduce((res, curr) => {
-     res.push(curr.item);
-     return res;
- }, [])
-};
+  return searchResults.reduce((res, curr) => {
+    res.push(curr.item);
+    return res;
+  }, []);
+}
 
 export default {
   init(list) {
-    console.log("search.init");
     fuse = new Fuse(list, options);
   },
   search(text) {

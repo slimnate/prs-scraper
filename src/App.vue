@@ -120,7 +120,6 @@ export default {
 
   computed: {
     activePreview: function() {
-      console.log("activePreview = ", this.$store.state.activePreview);
       return this.$store.state.activePreview;
     },
     libraries: function() {
@@ -149,7 +148,6 @@ export default {
   },
 
   created() {
-    console.log("initing store");
     this.$store.dispatch("init");
   }
 };

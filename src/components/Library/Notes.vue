@@ -110,9 +110,9 @@ export default {
             note: this.newNote
           })
           .then(() => {
-            console.log("note added");
+            //TODO: notify user of action complete
+            this.newNote = "";
           });
-        this.newNote = "";
       } else if (this.action == "Edit") {
         //save edit action
         this.$store.dispatch("editNote", {

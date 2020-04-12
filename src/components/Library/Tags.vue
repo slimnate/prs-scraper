@@ -78,9 +78,9 @@ export default {
   },
 
   methods: {
-      /**
-       * Remove selected tag
-       */
+    /**
+     * Remove selected tag
+     */
     removeTag: function(tagIndex) {
       this.$store.dispatch("removeTag", {
         libraryId: this.libraryId,
@@ -93,8 +93,6 @@ export default {
      */
     addTag: function(tag) {
       tag = tag || this.newTag; //use tag if provided, otherwise use q-select value
-
-      console.log("adding tag to library: ", tag);
 
       if (tag.length !== 0) {
         this.newTag = null;
@@ -111,7 +109,6 @@ export default {
      * proxies work to `addTag` method with the user input
      */
     newTagValue: function(val, done) {
-      console.log("new tag: ", val);
       this.addTag(val);
       done();
     }

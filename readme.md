@@ -36,6 +36,7 @@ Runs the server in production mode
 - ~~Add notes and tags to each library~~
 - ~~Add library to favorites~~
 - ~~Filter by favorites/tags~~
+- When editing a note: ensure editor field is empty or prompt user to overwrite
 - Add color-coding to tag badges for improved usability
 - Add chips to tag selector https://quasar.dev/vue-components/select#Example--Chips-as-display-value
 - Make tag filter selector outlined to match search field

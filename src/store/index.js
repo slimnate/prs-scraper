@@ -135,6 +135,49 @@ export default new Vuex.Store({
       lib.favorite = !lib.favorite;
 
       commit("UPDATE_LIBRARY", {id: libraryId, library: lib});
+    },
+
+    /**
+     * Adds a new `note` to a library
+     * @param {number} data.libraryId Library id (index)
+     * @param {string} data.note New note contents
+     */
+    addNote({commit, state}, {libraryId, note}) {
+      //grab copy of library obj to work on
+      var lib = Object.assign({}, state.libraries[libraryId]);
+
+      lib.notes.push(note);
+
+      commit("UPDATE_LIBRARY", { id: libraryId, library: lib });
+    },
+
+    /**
+     * Replaces the note at specified `noteId` with new `note`
+     * @param {number} data.libraryId Library id (index)
+     * @param {number} data.noteId Note id (index)
+     * @param {string} data.note Updated note contents
+     */
+    editNote({commit, state}, {libraryId, noteId, note}) {
+      //grab copy of library obj to work on
+      var lib = Object.assign({}, state.libraries[libraryId]);
+
+      lib.notes[noteId] = note;
+
+      commit("UPDATE_LIBRARY", { id: libraryId, library: lib });
+    },
+
+    /**
+     * Removes the note with specified `noteId`
+     * @param {number} data.libraryId Library id (index)
+     * @param {number} data.noteId Note id (index)
+     */
+    removeNote({commit, state}, {libraryId, noteId}) {
+      //grab copy of library obj to work on
+      var lib = Object.assign({}, state.libraries[libraryId]);
+
+      lib.notes = lib.notes.filter((n, i) => i !== noteId);
+
+      commit("UPDATE_LIBRARY", { id: libraryId, library: lib });
     }
   },
 

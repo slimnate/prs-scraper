@@ -39,6 +39,11 @@ function hasTag(library, tag) {
   return library.tags.indexOf(tag) !== -1;
 }
 
+//TODO: use in methods
+/*function makeCopy(obj) {
+  return Object.assign({}, obj);
+}*/
+
 export default new Vuex.Store({
   //STATE
   state: {
@@ -128,13 +133,13 @@ export default new Vuex.Store({
      * Toggles the `favorite` property on the library
      * @param {number} libraryId index of library
      */
-    toggleFavorite({commit, state}, libraryId) {
+    toggleFavorite({ commit, state }, libraryId) {
       //grab copy of library obj to work on
       var lib = Object.assign({}, state.libraries[libraryId]);
 
       lib.favorite = !lib.favorite;
 
-      commit("UPDATE_LIBRARY", {id: libraryId, library: lib});
+      commit("UPDATE_LIBRARY", { id: libraryId, library: lib });
     },
 
     /**
@@ -142,7 +147,7 @@ export default new Vuex.Store({
      * @param {number} data.libraryId Library id (index)
      * @param {string} data.note New note contents
      */
-    addNote({commit, state}, {libraryId, note}) {
+    addNote({ commit, state }, { libraryId, note }) {
       //grab copy of library obj to work on
       var lib = Object.assign({}, state.libraries[libraryId]);
 
@@ -157,7 +162,7 @@ export default new Vuex.Store({
      * @param {number} data.noteId Note id (index)
      * @param {string} data.note Updated note contents
      */
-    editNote({commit, state}, {libraryId, noteId, note}) {
+    editNote({ commit, state }, { libraryId, noteId, note }) {
       //grab copy of library obj to work on
       var lib = Object.assign({}, state.libraries[libraryId]);
 
@@ -171,7 +176,7 @@ export default new Vuex.Store({
      * @param {number} data.libraryId Library id (index)
      * @param {number} data.noteId Note id (index)
      */
-    removeNote({commit, state}, {libraryId, noteId}) {
+    removeNote({ commit, state }, { libraryId, noteId }) {
       //grab copy of library obj to work on
       var lib = Object.assign({}, state.libraries[libraryId]);
 

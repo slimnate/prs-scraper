@@ -91,7 +91,7 @@ import LibraryBrowser from "./components/LibraryBrowser.vue";
 import SitePreview from "./components/SitePreview.vue";
 
 export default {
-  name: "LayoutDefault",
+  name: "App",
 
   data() {
     return {

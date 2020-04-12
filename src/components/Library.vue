@@ -68,7 +68,7 @@
         <q-tab-panel name="notes">
           <div class="text-h6">Notes</div>
 
-          <library-notes :library="library"></library-notes>
+          <library-notes :library="library" :libraryId="index"></library-notes>
         </q-tab-panel>
 
         <!-- tags tab -->

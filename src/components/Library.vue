@@ -35,11 +35,9 @@
           </q-badge>
         </div>
 
-        <!-- span :id="'ruler-' + index" class="display: none;"></span -->
         <span :id="'shrtdsc-' + index" class="short-description">{{
           shortDescription
         }}</span>
-        <!--span class="ellipsis"> {{ library.descriptionPreview }} </span-->
       </q-item-section>
 
       <!-- link panel -->

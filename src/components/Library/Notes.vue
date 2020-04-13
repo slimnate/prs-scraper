@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Table of existing notes -->
-    <q-markup-table class="row">
+    <q-markup-table dense>
       <!-- table header -->
       <thead>
         <tr>

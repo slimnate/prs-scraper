@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Table of existing tags -->
-    <q-markup-table>
+    <q-markup-table dense>
       <thead>
         <tr>
           <th class="text-center">Tag</th>

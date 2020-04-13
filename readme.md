@@ -31,17 +31,10 @@ Runs the server in development mode with live-reload enabled. Access site at:
 
 Runs the server in production mode
 
-## Future Features & Functionality
-- Find a better way to auto-truncate libraries `shortDescription`
-- ~~Add notes and tags to each library~~
-- ~~Add library to favorites~~
-- ~~Filter by favorites/tags~~
-- When editing a note: ensure editor field is empty or prompt user to overwrite
-- Add color-coding to tag badges for improved usability
-- Add chips to tag selector https://quasar.dev/vue-components/select#Example--Chips-as-display-value
-- Make tag filter selector outlined to match search field
-- Add badges to notes/tags tab button
-- Add Notify messsages upon actions performed
-- Add waiting spinners
-- Scroll note/tag areas if they get too tall
-- Move store action definitions to separate files for individual feature sets (notes, tags, etc)
+## Contribution
+
+Outside contribution is welcome, please check the [Github Project page](https://github.com/slimnate/prs-scraper/projects/1) for a complete view of all outstanding issues that need working, as well as in-progress and completed issues. Please create a branch named `issue-<issue #>` (eg. issue-1) and submit a pull request when your code is complete.
+
+### Submitting issues
+
+If you would like to submit a bug report or enhancement request, please submit an issue on github [here](https://github.com/slimnate/prs-scraper/issues)
